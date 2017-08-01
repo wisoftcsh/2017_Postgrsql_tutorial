@@ -1,27 +1,27 @@
 # 2017_Postgrsql_tutorial
 
--- 1. HNU 엔터테인먼트의 부서의 코드, 이름 위치를 검색하시오
+-- 1. HNU 엔터테인먼트의 부서의 코드, 이름 위치를 검색하시오 <br>
 SELECT dept_code, dept_name, dept_loc FROM department;
 
--- 2. HNU 엔터테인먼트의 연예관계자인 코드, 이름, 관리자, 급여를 검색하시오
+-- 2. HNU 엔터테인먼트의 연예관계자인 코드, 이름, 관리자, 급여를 검색하시오<br>
 SELECT emp_code, emp_name, emp_mgt, emp_sal FROM employee;
 
--- 3. 2013년에 제작된 영화의 코드, 이름, 관람등급, 출시년월, 개봉년월을 검색하시오
+-- 3. 2013년에 제작된 영화의 코드, 이름, 관람등급, 출시년월, 개봉년월을 검색하시오<br>
 SELECT mov_code, mov_name, mov_mpaa, mov_pddate FROM movie;
 
--- 4. 2013년에 제작된 드라마의 코드, 이름, 제작사, 방영사, 방영년월을 검색하시오
+-- 4. 2013년에 제작된 드라마의 코드, 이름, 제작사, 방영사, 방영년월을 검색하시오<br>
 SELECT drm_code, drm_name, drm_prd, drm_brd, drm_opdate FROM drama;
 
--- 5. 2013년에 제작된 음반의 코드, 이름, 출시일자, 가격을 검색하시오
+-- 5. 2013년에 제작된 음반의 코드, 이름, 출시일자, 가격을 검색하시오<br>
 SELECT msc_code, msc_name, msc_date, msc_price FROM music;
 
--- 6. HNU-E 회사에서 제작한 드라마의 코드와 이름을 검색하시오
+-- 6. HNU-E 회사에서 제작한 드라마의 코드와 이름을 검색하시오<br>
 SELECT drm_code, drm_name FROM drama WHERE drm_prd='HNU-E';
 
--- 7. 음반 구분이 싱글인 음반의 코드, 이름, 출시일자를 검색하시오
+-- 7. 음반 구분이 싱글인 음반의 코드, 이름, 출시일자를 검색하시오<br>
 SELECT msc_code, msc_name, msc_date FROM music WHERE msc_csf='싱글';
 
--- 8. 음반 구분이 정규의 코드, 이름, 출시일자, 가격을 검색하시오
+-- 8. 음반 구분이 정규의 코드, 이름, 출시일자, 가격을 검색하시오<br>
 SELECT msc_code, msc_name, msc_date, msc_date FROM music WHERE msc_csf='정규';
 
 -- 9. 2013년 3월 이후에 출시된 영화의 이름, 관람등급을 검색하시오
